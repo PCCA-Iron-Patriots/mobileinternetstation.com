@@ -1,19 +1,31 @@
 <html>
 <head>
     <script src="https://kit.webawesome.com/ebd7e74cc9d34d69.js" crossorigin="anonymous"></script>
+    <style>
+        .hero {
+            min-height: 80vh;
+            background: 
+                linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+                url("assets/images/russ-mccabe-4f_fhoAn3bI-unsplash.jpg") center / cover no-repeat;
+            color: white;
+            display: grid;
+            place-content: center;
+            padding: 48px;
+        }
+    </style>
 </head>
 <body class="wa-theme-site">
     <wa-page mobile-breakpoint="920">
-        <main id="content">
-            <br><br>
+        <div class="hero">
             <h1 class="wa-heading-4xl" style="text-transform: uppercase">Get Internet while on a remote dig. <wa-icon name="shovel"></wa-icon></h1>
             <p class="wa-body-l">
                 Our open source guide combines reliable internet from space, batteries, and solar panels so you can have a remote zoom call, access critical databases, and record findings while off grid. Even keep your laptop and other devices charged.
             </p>
-            <br><br><br>
+        </div>
 
+        <main id="content">
+            <br>
             <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="cubes"></wa-icon> Mobile Internet Station Components</h2>
-
             <div class="wa-grid">
                 <div class="wa-stack">
                     <img src="assets/images/starlink-mini.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
@@ -23,7 +35,7 @@
                 <div class="wa-stack">
                     <img src="assets/images/anker-powerhouse-521.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
                     <h3><wa-icon name="battery-bolt"></wa-icon> Power Station</h3>
-                    <p>When there's less sun, these batteries can provide power through an average 8 hour day. A 30W Starlink Mini can run for 8 hours on a 240Wh power station with no available sun.</p>
+                    <p>These batteries allow the Starlink Mini to run, even without solar panels.</p>
                 </div>
                 <div class="wa-stack">
                     <img src="assets/images/anker-solix-ps100.jpeg" style="aspect-ratio: 3 / 2; object-fit: cover;" />
@@ -33,8 +45,18 @@
             </div>
 
             <br><br><br>
-            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="money-bill-1-wave"></wa-icon> Buying Advice</h2>
+            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="lightbulb-on"></wa-icon> Things to Know</h2>
+            <ol>
+                <li>From the Starlink Mini, you can expect speeds of around 100 megabits/second download and 20 megabits/second upload. This is enough even for an HD Zoom call while you're in the field.</li>
+                <li>The Starlink Mini needs 120&deg; of open sky to be able to find the sattelites.</li>
+                <li>The Starlink Mini pulls 30 watts on average, but can be as low 15 watts and as high as 60 watts.</li>
+                <li>Because you're often getting less than direct sun, we recommend at least 100 watt solar panels.</li>
+                <li>To make sure you have enough power for the Starlink Mini throughout the day, we recommend at least 240 watt hours (30 watts &times; 8 hour work day = 240 watt hours).</li>
+                <li>Power stations are made up of many battery cells. Cheaper brands can be dangerous, as these batteries can catch on fire or explode. This also means they cannot be taken on planes (more than 160 watt hours), and they are very expensive to ship.</li>
+            </ol>
 
+            <br><br><br>
+            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="money-bill-1-wave"></wa-icon> Buying Advice</h2>
             <ol class="wa-heading-xl">
                 <li>
                     <h3 class="wa-heading-xl">Starlink Mini</h3>
@@ -67,7 +89,7 @@
                         Generally, one of these brands is usually available no matter where you live in the world.
                     </p>
                     <p class="wa-body-m">
-                        It's especially important to buy a known brand for the power station, as <strong>cheaper brands are known to explode much more often</strong>.
+                        It's especially important to buy a known brand for the power station, as <strong>cheaper brands are known to explode more often</strong>.
                     </p>
                 </li>
             </ol>
@@ -98,6 +120,12 @@
                 <strong>Please send your story to <a href="mailto:fll@awesome.me">fll@awesome.me</a>.</strong> Thank you so much for helping us out!!!
             </p>
 
+
+            <br><br>
+            <h3 class="wa-heading-xl" style="text-transform: uppercase"><wa-icon name="github" family="brands"></wa-icon> Open Source</h2>
+            <p>
+                The code for this open source guide is <a href="https://github.com/PCCA-Iron-Patriots/mobileinternetstation.com">hosted on GitHub</a>. Please contribute changes so we can make things better!
+            </p>
 
         </main>
     </wa-page>
