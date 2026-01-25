@@ -1,6 +1,7 @@
 <html>
 <head>
     <script src="https://kit.webawesome.com/ebd7e74cc9d34d69.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e34a34064f.js" crossorigin="anonymous"></script>
     <style>
         .hero {
             min-height: 80vh;
@@ -10,21 +11,22 @@
             color: white;
             display: grid;
             place-content: center;
+            margin: -48px;
             padding: 48px;
         }
     </style>
 </head>
 <body class="wa-theme-site">
     <wa-page mobile-breakpoint="920">
-        <div class="hero">
-            <h1 class="wa-heading-4xl" style="text-transform: uppercase">Get Internet while on a remote dig. <wa-icon name="shovel"></wa-icon></h1>
-            <p class="wa-body-l">
-                Our open source guide combines reliable internet from space, batteries, and solar panels so you can have a remote zoom call, access critical databases, and record findings while off grid. Even keep your laptop and other devices charged.
-            </p>
-        </div>
-
         <main id="content">
-            <br>
+            <div class="hero">
+                <h1 class="wa-heading-4xl" style="text-transform: uppercase">Get Internet while on a remote dig. <wa-icon name="shovel"></wa-icon></h1>
+                <p class="wa-body-l">
+                    Our open source guide combines reliable internet from space, batteries, and solar panels so you can have a remote zoom call, access critical databases, and record findings while off grid. Even keep your laptop and other devices charged.
+                </p>
+            </div>
+
+            <br><br><br><br>
             <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="cubes"></wa-icon> Mobile Internet Station Components</h2>
             <div class="wa-grid">
                 <div class="wa-stack">
@@ -33,29 +35,36 @@
                     <p>This is the core of what gives you reliable internet from space. This draws on average about 30 watts of power.</p>
                 </div>
                 <div class="wa-stack">
-                    <img src="assets/images/anker-powerhouse-521.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
-                    <h3><wa-icon name="battery-bolt"></wa-icon> Power Station</h3>
-                    <p>These batteries allow the Starlink Mini to run, even without solar panels.</p>
-                </div>
-                <div class="wa-stack">
                     <img src="assets/images/anker-solix-ps100.jpeg" style="aspect-ratio: 3 / 2; object-fit: cover;" />
                     <h3><wa-icon name="sunglasses"></wa-icon> Solar Panels</h3>
                     <p>These help keep power flowing for your Starlink Mini or other devices and can charge your power station.</p>                    
+                </div>
+                <div class="wa-stack">
+                    <img src="assets/images/anker-powerhouse-521.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
+                    <h3><wa-icon name="battery-bolt"></wa-icon> Power Station</h3>
+                    <p>These batteries are needed to even out the power from the solar panels so the Starlink Mini can keep running.</p>
                 </div>
             </div>
 
             <br><br><br>
             <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="lightbulb-on"></wa-icon> Things to Know</h2>
             <ol>
-                <li>From the Starlink Mini, you can expect speeds of around 100 megabits/second download and 20 megabits/second upload. This is enough even for an HD Zoom call while you're in the field.</li>
-                <li>The Starlink Mini needs 120&deg; of open sky to be able to find the sattelites.</li>
-                <li>The Starlink Mini pulls 30 watts on average, but can be as low 15 watts and as high as 60 watts.</li>
-                <li>Because you're often getting less than direct sun, we recommend at least 100 watt solar panels.</li>
-                <li>To make sure you have enough power for the Starlink Mini throughout the day, we recommend at least 240 watt hours (30 watts &times; 8 hour work day = 240 watt hours).</li>
-                <li>Power stations are made up of many battery cells. Cheaper brands can be dangerous, as these batteries can catch on fire or explode. This also means they cannot be taken on planes (more than 160 watt hours), and they are very expensive to ship.</li>
+                <li>From the Starlink Mini, you can expect speeds of around 100 megabits/second download and 20 megabits/second upload. <strong>This is enough for an HD Zoom call while you're out in the field.</strong></li>
+                <li>The Starlink Mini needs <strong>120&deg; of open sky</strong> to be able to find the sattelites.</li>
+                <li>The Starlink Mini pulls <strong>30 watts on average</strong>, but can be as low 15 watts and as high as 60 watts.</li>
+                <li>Because you're often getting less than direct sun, <strong>we recommend at least 100 watt solar panels</strong>.</li>
+                <li>To make sure you have enough power for the Starlink Mini throughout the day, <strong>we recommend at least 240 watt hours</strong> (30 watts &times; 8 hour work day = 240 watt hours).</li>
+                <li>For teams who want more power, all brands have great options for larger power station capacity and solar panels that generate more power.</li>
+            </ol>
+            <br>
+            <h3 class="wa-heading-xl" style="text-transform: uppercase"><wa-icon name="dumpster-fire"></wa-icon> Battery Safety</h2>
+            <ol>
+                <li>Power stations are made up of many battery cells. <strong>Cheaper battery brands can be dangerous and can <a href="https://youtu.be/XsZFyT5PT_4">catch on fire or explode</a> (it's called thermal runaway).</strong> This also means they cannot be taken on planes (more than 160 watt hours), and they are very expensive to ship (Fedex told us $3,000 to ship from the USA to Europe).</li>
+                <li>If you're worried about power station batteries being dangerous, there's good news! <strong>Solid state batteries are much safer and <a href="https://youtu.be/zQATIPoVxg4?si=rQ8xgS0PK79moucP">much less likely to catch fire or explode</a>.</strong> Brands such as Yoshino are already shipping <a href="https://yoshinopower.com/products/b330-solid-state-portable-power-station">a 241 watt hour power station</a> (our recommendation is over 240 watt hours). They cost about twice as much right now, but are lighter and much safer.</li>
             </ol>
 
-            <br><br><br>
+
+            <br><br>
             <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="money-bill-1-wave"></wa-icon> Buying Advice</h2>
             <ol class="wa-heading-xl">
                 <li>
@@ -71,7 +80,7 @@
                 <li>
                     <h3 class="wa-heading-xl">Power Station &amp; Solar Panels</h3>
                     <p class="wa-body-m">
-                        Typically, you'll want to buy the power station &amp; solar panels from the same brand, as it's the easiest way to make sure they use the same solar connector standard.
+                        Typically, you'll want to buy the power station &amp; solar panels from the same brand, as it's the easiest way to make sure the solar panels can charge the power station without an extra adapter.
                     </p>
                     <p class="wa-body-m">
                         Also, if you can find a power station in a specific brand in your region, you're probably going to be able to find matching solar panels too.
@@ -94,18 +103,24 @@
                 </li>
             </ol>
 
+            <br><br>
+            <h3 class="wa-heading-xl" style="text-transform: uppercase"><wa-icon name="plug-circle-exclamation"></wa-icon> Different Solar Connectors</h2>
+            <p>
+                If you're buying your solar panels and power station from different brands, make sure the solar panel output connect matches the power station. If they don't match, you'll need to find an adapter.
+            </p>
+
             <br><br><br>
             <h2 class="wa-heading-3xl" style="text-transform: uppercase">
                 About Us
                 <wa-icon name="user-shakespeare"></wa-icon>
                 <wa-icon name="user-hoodie"></wa-icon>
-                <wa-icon name="user-cowboy"></wa-icon>
+                <i class="fa-kit fa-user-cowboy-hair-long"></i>
                 <wa-icon name="user-secret"></wa-icon>
                 <wa-icon name="user-sith"></wa-icon>
                 <wa-icon name="user-bounty-hunter"></wa-icon>
             </h2>
             <p>
-                We are a First Lego League team of kids from 4th to 7th grade in Northwestern Arkansas, USA. We spent so much time testing the Mobile Internet Station that it was like having a part time job.
+                We are a First Lego League team from 4th to 7th grade in Northwestern Arkansas, USA. We spent so much time testing our Mobile Internet Station and writing this guide that it was like having a part time job.
             </p>
             <p>                
                 We made this guide for the 2025-2026 Unearthed theme. Our innovation project is designed to help archeologists <wa-icon name="person-digging"></wa-icon> get internet while on a remote dig.
