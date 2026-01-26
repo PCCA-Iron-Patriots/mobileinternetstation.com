@@ -4,6 +4,10 @@
     <script src="https://kit.webawesome.com/ebd7e74cc9d34d69.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e34a34064f.js" crossorigin="anonymous"></script>
     <style>
+        a { font-weight: bold; }
+        wa-page {
+            background-color: var(--wa-color-surface-lowered);
+        }
         .hero {
             display: grid;
             place-content: center;
@@ -43,9 +47,8 @@
             max-width: var(--max-width, var(--content-width-l));
             padding-inline: var(--content-padding-inline);
         }
-        section + section {
-            margin-top: 5rem;
-        }
+        section + section { margin-top: 4rem; }
+        ::part(navigation-toggle) { display: none; }
     </style>
 </head>
 <body>
