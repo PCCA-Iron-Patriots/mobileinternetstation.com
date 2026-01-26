@@ -9,9 +9,20 @@
                 linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
                 url("assets/images/russ-mccabe-4f_fhoAn3bI-unsplash.jpg") center / cover no-repeat;
             color: white;
-            place-content: center;
+            --outline-width: 2px;
+            --outline-color: rgba(0,0,0,.6);
+            --outline-blur: 2px;
+            text-shadow: 
+                calc(var(--outline-width) * -1) calc(var(--outline-width) * -1) var(--outline-blur) var(--outline-color),
+                var(--outline-width) calc(var(--outline-width) * -1) var(--outline-blur) var(--outline-color),
+                calc(var(--outline-width) * -1) var(--outline-width) var(--outline-blur) var(--outline-color),
+                var(--outline-width) var(--outline-width) var(--outline-blur) var(--outline-color);
             margin: -48px -48px 0;
             padding: 168px 48px;
+        }
+        main {
+            padding-left: 32px;
+            padding-right: 32px;
         }
     </style>
 </head>
@@ -19,34 +30,34 @@
     <wa-page>
         <main id="content">
             <div class="hero">
-                <h1 class="wa-heading-4xl" style="text-transform: uppercase">Get Internet while on a remote dig. <wa-icon name="shovel"></wa-icon></h1>
+                <h1 class="wa-heading-4xl" style="text-transform: uppercase">Get Internet while on a remote dig. <i class="fa-solid fa-shovel"></i></h1>
                 <p class="wa-body-l">
                     Our open source guide combines reliable internet from space, batteries, and solar panels so you can have a remote zoom call, access critical databases, and record findings while off grid. Even keep your laptop and other devices charged.
                 </p>
             </div>
 
             <br><br>
-            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="cubes"></wa-icon> Mobile Internet Station Components</h2>
+            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-cubes"></i> Mobile Internet Station Components</h2>
             <div class="wa-grid">
                 <div class="wa-stack">
                     <img src="assets/images/starlink-mini.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
-                    <h3><wa-icon name="satellite"></wa-icon> Starlink Mini</h3>
+                    <h3><i class="fa-solid fa-satellite"></i> Starlink Mini</h3>
                     <p>This is the core of what gives you reliable internet from space. This draws on average about 30 watts of power.</p>
                 </div>
                 <div class="wa-stack">
                     <img src="assets/images/anker-solix-ps100.jpeg" style="aspect-ratio: 3 / 2; object-fit: cover;" />
-                    <h3><wa-icon name="sunglasses"></wa-icon> Solar Panels</h3>
+                    <h3><i class="fa-solid fa-sunglasses"></i> Solar Panels</h3>
                     <p>These help keep power flowing for your Starlink Mini or other devices and can charge your power station.</p>                    
                 </div>
                 <div class="wa-stack">
                     <img src="assets/images/anker-powerhouse-521.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
-                    <h3><wa-icon name="battery-bolt"></wa-icon> Power Station</h3>
+                    <h3><i class="fa-solid fa-battery-bolt"></i> Power Station</h3>
                     <p>These batteries are needed to even out the power from the solar panels so the Starlink Mini can keep running.</p>
                 </div>
             </div>
 
             <br><br><br>
-            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="lightbulb-on"></wa-icon> Things to Know</h2>
+            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-lightbulb-on"></i> Things to Know</h2>
             <ol>
                 <li>From the Starlink Mini, you can expect speeds of around 100 megabits/second download and 20 megabits/second upload. <strong>This is enough for an HD Zoom call while you're out in the field.</strong></li>
                 <li>The Starlink Mini needs <strong>120&deg; of open sky</strong> to be able to find the sattelites.</li>
@@ -56,7 +67,7 @@
                 <li>For teams who want more power, all brands have great options for larger power station capacity and solar panels that generate more power.</li>
             </ol>
             <br>
-            <h3 class="wa-heading-xl" style="text-transform: uppercase"><wa-icon name="dumpster-fire"></wa-icon> Battery Safety</h2>
+            <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-dumpster-fire"></i> Battery Safety</h2>
             <ol>
                 <li>Power stations are made up of many battery cells. <strong>Cheaper battery brands can be dangerous and can <a href="https://youtu.be/XsZFyT5PT_4">catch on fire or explode</a> (it's called thermal runaway).</strong> This also means they cannot be taken on planes (more than 160 watt hours), and they are very expensive to ship (Fedex told us $3,000 to ship from the USA to Europe).</li>
                 <li>If you're worried about power station batteries being dangerous, there's good news! <strong>Solid state batteries are much safer and <a href="https://youtu.be/zQATIPoVxg4?si=rQ8xgS0PK79moucP">much less likely to catch fire or explode</a>.</strong> Brands such as Yoshino are already shipping <a href="https://yoshinopower.com/products/b330-solid-state-portable-power-station">a 241 watt hour power station</a> (our recommendation is over 240 watt hours). They cost about twice as much right now, but are lighter and much safer.</li>
@@ -64,7 +75,7 @@
 
 
             <br><br>
-            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><wa-icon name="money-bill-1-wave"></wa-icon> Buying Advice</h2>
+            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-money-bill-1-wave"></i> Buying Advice</h2>
             <ol class="wa-heading-xl">
                 <li>
                     <h3 class="wa-heading-xl">Starlink Mini</h3>
@@ -90,10 +101,10 @@
                     <h3 class="wa-heading-xl">Brands to Buy</h3>
                     <p class="wa-body-m">
                         We recommend buying a power station / solar panel combo (also referred to sometimes as a solar generator) from 
-                        <a target="_blank" href="https://www.anker.com">Anker<wa-icon name="arrow-up-right-from-square"></wa-icon></a>, 
-                        <a target="_blank" href="https://www.bluettipower.com">Bluetti<wa-icon name="arrow-up-right-from-square"></wa-icon></a>, 
-                        <a target="_blank" href="https://ecoflow.com">Ecoflow<wa-icon name="arrow-up-right-from-square"></wa-icon></a>, and 
-                        <a target="_blank" href="https://www.jackery.com">Jackery<wa-icon name="arrow-up-right-from-square"></wa-icon></a>. 
+                        <a target="_blank" href="https://www.anker.com">Anker<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 
+                        <a target="_blank" href="https://www.bluettipower.com">Bluetti<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 
+                        <a target="_blank" href="https://ecoflow.com">Ecoflow<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, and 
+                        <a target="_blank" href="https://www.jackery.com">Jackery<i class="fa-solid fa-arrow-up-right-from-square"></i></a>. 
                         Generally, one of these brands is usually available no matter where you live in the world.
                     </p>
                     <p class="wa-body-m">
@@ -103,7 +114,7 @@
             </ol>
 
             <br><br>
-            <h3 class="wa-heading-xl" style="text-transform: uppercase"><wa-icon name="plug-circle-exclamation"></wa-icon> Different Solar Connectors</h2>
+            <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-plug-circle-exclamation"></i> Different Solar Connectors</h2>
             <p>
                 If you're buying your solar panels and power station from different brands, make sure the solar panel output connect matches the power station. If they don't match, you'll need to find an adapter.
             </p>
@@ -111,22 +122,22 @@
             <br><br><br>
             <h2 class="wa-heading-3xl" style="text-transform: uppercase">
                 About Us
-                <wa-icon name="user-shakespeare"></wa-icon>
-                <wa-icon name="user-hoodie"></wa-icon>
+                <i class="fa-solid fa-user-shakespeare"></i>
+                <i class="fa-solid fa-user-hoodie"></i>
                 <i class="fa-kit fa-user-cowboy-hair-long"></i>
-                <wa-icon name="user-secret"></wa-icon>
-                <wa-icon name="user-sith"></wa-icon>
-                <wa-icon name="user-bounty-hunter"></wa-icon>
+                <i class="fa-solid fa-user-secret"></i>
+                <i class="fa-solid fa-user-sith"></i>
+                <i class="fa-solid fa-user-bounty-hunter"></i>
             </h2>
             <p>
                 We are a First Lego League team from 4th to 7th grade in Northwestern Arkansas, USA. We spent so much time testing our Mobile Internet Station and writing this guide that it was like having a part time job.
             </p>
             <p>                
-                We made this guide for the 2025-2026 Unearthed theme. Our innovation project is designed to help archeologists <wa-icon name="person-digging"></wa-icon> get internet while on a remote dig.
+                We made this guide for the 2025-2026 Unearthed theme. Our innovation project is designed to help archeologists <i class="fa-solid fa-person-digging"></i> get internet while on a remote dig.
             </p>
 
             <br><br>    
-            <h3 class="wa-heading-xl" style="text-transform: uppercase"><wa-icon name="mailbox-flag-up"></wa-icon> Help us!</h3>
+            <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-mailbox-flag-up"></i> Help us!</h3>
             <p>
                 If you found this guide useful, please tell us your story of using this guide. Was it helpful? Do you have ideas for improvements? We would love to iterate and make things better! 
             </p>
@@ -136,7 +147,7 @@
 
 
             <br><br>
-            <h3 class="wa-heading-xl" style="text-transform: uppercase"><wa-icon name="github" family="brands"></wa-icon> Open Source</h2>
+            <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-github" family="brands"></i> Open Source</h2>
             <p>
                 The code for this open source guide is <a href="https://github.com/PCCA-Iron-Patriots/mobileinternetstation.com">hosted on GitHub</a>. Please contribute changes so we can make things better!
             </p>
