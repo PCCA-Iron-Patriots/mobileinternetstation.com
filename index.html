@@ -35,138 +35,163 @@
             padding-left: 32px;
             padding-right: 32px;
         }
+        body {
+            --max-width: 60rem;
+        }
+        .content-container {
+            margin-inline: auto;
+            max-width: var(--max-width, var(--content-width-l));
+            padding-inline: var(--content-padding-inline);
+        }
+        section + section {
+            margin-top: 5rem;
+        }
     </style>
 </head>
 <body>
     <wa-page>
         <main id="content">
-            <div class="hero">
-                <h1>Get Internet while on a remote dig. <i class="fa-solid fa-shovel"></i></h1>
-                <p>
-                    Our open source guide combines reliable internet from space, batteries, and solar panels so you can have a remote zoom call, access critical databases, and record findings while off grid. Even keep your laptop and other devices charged.
-                </p>
-            </div>
-
-            <br><br>
-            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-cubes"></i> Mobile Internet Station Components</h2>
-            <div class="wa-grid">
-                <div class="wa-stack">
-                    <img src="assets/images/starlink-mini.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
-                    <h3><i class="fa-solid fa-satellite"></i> Starlink Mini</h3>
-                    <p>This is the core of what gives you reliable internet from space. This draws on average about 30 watts of power.</p>
-                </div>
-                <div class="wa-stack">
-                    <img src="assets/images/anker-solix-ps100.jpeg" style="aspect-ratio: 3 / 2; object-fit: cover;" />
-                    <h3><i class="fa-solid fa-sunglasses"></i> Solar Panels</h3>
-                    <p>These help keep power flowing for your Starlink Mini or other devices and can charge your power station.</p>                    
-                </div>
-                <div class="wa-stack">
-                    <img src="assets/images/anker-powerhouse-521.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
-                    <h3><i class="fa-solid fa-battery-bolt"></i> Power Station</h3>
-                    <p>These batteries are needed to even out the power from the solar panels so the Starlink Mini can keep running.</p>
-                </div>
-            </div>
-
-            <br><br><br>
-            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-lightbulb-on"></i> Things to Know</h2>
-            <ol>
-                <li>From the Starlink Mini, you can expect speeds of around 100 megabits/second download and 20 megabits/second upload. <strong>This is enough for an HD Zoom call while you're out in the field.</strong></li>
-                <li>The Starlink Mini needs <strong>120&deg; of open sky</strong> to be able to find the sattelites.</li>
-                <li>The Starlink Mini pulls <strong>30 watts on average</strong>, but can be as low 15 watts and as high as 60 watts.</li>
-                <li>Because you're often getting less than direct sun, <strong>we recommend at least 100 watt solar panels</strong>.</li>
-                <li>To make sure you have enough power for the Starlink Mini throughout the day, <strong>we recommend at least 240 watt hours</strong> (30 watts &times; 8 hour work day = 240 watt hours).</li>
-                <li>For teams who want more power, all brands have great options for larger power station capacity and solar panels that generate more power.</li>
-            </ol>
-            <br>
-            <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-dumpster-fire"></i> Battery Safety</h2>
-            <ol>
-                <li>Power stations are made up of many battery cells. <strong>Cheaper battery brands can be dangerous and can <a href="https://youtu.be/XsZFyT5PT_4">catch on fire or explode</a> (it's called thermal runaway).</strong> This also means they cannot be taken on planes (more than 160 watt hours), and they are very expensive to ship (Fedex told us $3,000 to ship from the USA to Europe).</li>
-                <li>If you're worried about power station batteries being dangerous, there's good news! <strong>Solid state batteries are much safer and <a href="https://youtu.be/zQATIPoVxg4?si=rQ8xgS0PK79moucP">much less likely to catch fire or explode</a>.</strong> Brands such as Yoshino are already shipping <a href="https://yoshinopower.com/products/b330-solid-state-portable-power-station">a 241 watt hour power station</a> (our recommendation is over 240 watt hours). They cost about twice as much right now, but are lighter and much safer.</li>
-            </ol>
-
-
-            <br><br>
-            <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-money-bill-1-wave"></i> Buying Advice</h2>
-            <ol class="wa-heading-xl">
-                <li>
-                    <h3 class="wa-heading-xl">Starlink Mini</h3>
-                    <p class="wa-body-m">
-                        <strong>You absolutely need a Starlink Mini.</strong> There's just no other option for getting reliable internet from anywhere in the world.
+            <section class="hero">
+                <div class="content-container">
+                    <h1>Get Internet while on a remote dig. <i class="fa-solid fa-shovel"></i></h1>
+                    <p>
+                        Our open source guide combines reliable internet from space, batteries, and solar panels so you can have a remote zoom call, access critical databases, and record findings while off grid. Even keep your laptop and other devices charged.
                     </p>
-                    <p class="wa-body-m">
-                        Buy this from SpaceX or a local vendor. In the US, you can buy this directly or buy from Target, Best Buy, or even Home Depot.
-                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="content-container">
+                    <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-cubesc"></i> Mobile Internet Station Components</h2>
+                    <div class="wa-grid">
+                        <div class="wa-stack">
+                            <img src="assets/images/starlink-mini.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
+                            <h3><i class="fa-solid fa-satellite"></i> Starlink Mini</h3>
+                            <p>This is the core of what gives you reliable internet from space. This draws on average about 30 watts of power.</p>
+                        </div>
+                        <div class="wa-stack">
+                            <img src="assets/images/anker-solix-ps100.jpeg" style="aspect-ratio: 3 / 2; object-fit: cover;" />
+                            <h3><i class="fa-solid fa-sunglasses"></i> Solar Panels</h3>
+                            <p>These help keep power flowing for your Starlink Mini or other devices and can charge your power station.</p>                    
+                        </div>
+                        <div class="wa-stack">
+                            <img src="assets/images/anker-powerhouse-521.jpg.webp" style="aspect-ratio: 3 / 2; object-fit: cover;" />
+                            <h3><i class="fa-solid fa-battery-bolt"></i> Power Station</h3>
+                            <p>These batteries are needed to even out the power from the solar panels so the Starlink Mini can keep running.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="content-container">
+                    <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-lightbulb-on wa-desktop-only"></i> Things to Know</h2>
+                    <ol>
+                        <li>From the Starlink Mini, you can expect speeds of around 100 megabits/second download and 20 megabits/second upload. <strong>This is enough for an HD Zoom call while you're out in the field.</strong></li>
+                        <li>The Starlink Mini needs <strong>120&deg; of open sky</strong> to be able to find the sattelites.</li>
+                        <li>The Starlink Mini pulls <strong>30 watts on average</strong>, but can be as low 15 watts and as high as 60 watts.</li>
+                        <li>Because you're often getting less than direct sun, <strong>we recommend at least 100 watt solar panels</strong>.</li>
+                        <li>To make sure you have enough power for the Starlink Mini throughout the day, <strong>we recommend at least 240 watt hours</strong> (30 watts &times; 8 hour work day = 240 watt hours).</li>
+                        <li>For teams who want more power, all brands have great options for larger power station capacity and solar panels that generate more power.</li>
+                    </ol>
                     <br>
-                </li>
-                <li>
-                    <h3 class="wa-heading-xl">Power Station &amp; Solar Panels</h3>
-                    <p class="wa-body-m">
-                        Typically, you'll want to buy the power station &amp; solar panels from the same brand, as it's the easiest way to make sure the solar panels can charge the power station without an extra adapter.
+                    <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-dumpster-fire"></i> Battery Safety</h2>
+                    <ol>
+                        <li>Power stations are made up of many battery cells. <strong>Cheaper battery brands can be dangerous and can <a href="https://youtu.be/XsZFyT5PT_4">catch on fire or explode</a> (it's called thermal runaway).</strong> This also means they cannot be taken on planes (more than 160 watt hours), and they are very expensive to ship (Fedex told us $3,000 to ship from the USA to Europe).</li>
+                        <li>If you're worried about power station batteries being dangerous, there's good news! <strong>Solid state batteries are much safer and <a href="https://youtu.be/zQATIPoVxg4?si=rQ8xgS0PK79moucP">much less likely to catch fire or explode</a>.</strong> Brands such as Yoshino are already shipping <a href="https://yoshinopower.com/products/b330-solid-state-portable-power-station">a 241 watt hour power station</a> (our recommendation is over 240 watt hours). They cost about twice as much right now, but are lighter and much safer.</li>
+                    </ol>                    
+                </div>
+            </section>
+
+            <section>
+                <div class="content-container">
+                    <h2 class="wa-heading-3xl" style="text-transform: uppercase"><i class="fa-solid fa-money-bill-1-wave wa-desktop-only"></i> Buying Advice</h2>
+                    <ol class="wa-heading-xl">
+                        <li>
+                            <h3 class="wa-heading-xl">Starlink Mini</h3>
+                            <p class="wa-body-m">
+                                <strong>You absolutely need a Starlink Mini.</strong> There's just no other option for getting reliable internet from anywhere in the world.
+                            </p>
+                            <p class="wa-body-m">
+                                Buy this from SpaceX or a local vendor. In the US, you can buy this directly or buy from Target, Best Buy, or even Home Depot.
+                            </p>
+                            <br>
+                        </li>
+                        <li>
+                            <h3 class="wa-heading-xl">Power Station &amp; Solar Panels</h3>
+                            <p class="wa-body-m">
+                                Typically, you'll want to buy the power station &amp; solar panels from the same brand, as it's the easiest way to make sure the solar panels can charge the power station without an extra adapter.
+                            </p>
+                            <p class="wa-body-m">
+                                Also, if you can find a power station in a specific brand in your region, you're probably going to be able to find matching solar panels too.
+                            </p>
+                            <br>
+                        </li>
+                        <li>
+                            <h3 class="wa-heading-xl">Brands to Buy</h3>
+                            <p class="wa-body-m" style="--fa-display: inline;">
+                                We recommend buying a power station / solar panel combo (also referred to sometimes as a solar generator) from 
+                                <a target="_blank" href="https://www.anker.com">Anker&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 
+                                <a target="_blank" href="https://www.bluettipower.com">Bluetti&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 
+                                <a target="_blank" href="https://ecoflow.com">Ecoflow&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, and 
+                                <a target="_blank" href="https://www.jackery.com">Jackery&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>. 
+                                Generally, one of these brands is usually available no matter where you live in the world.
+                            </p>
+                            <p class="wa-body-m">
+                                It's especially important to buy a known brand for the power station, as <strong>cheaper brands are known to explode more often</strong>.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <br><br>
+                    <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-plug-circle-exclamation wa-desktop-only"></i> Different Solar Connectors</h2>
+                    <p>
+                        If you're buying your solar panels and power station from different brands, make sure the solar panel output connect matches the power station. If they don't match, you'll need to find an adapter.
                     </p>
-                    <p class="wa-body-m">
-                        Also, if you can find a power station in a specific brand in your region, you're probably going to be able to find matching solar panels too.
+                </div>
+            </section>
+
+            <section>
+                <div class="content-container">
+                    <h2 class="wa-heading-3xl" style="text-transform: uppercase">
+                        About Us
+                    </h2>
+                    <h2>
+                        <i class="fa-solid fa-user-shakespeare"></i>
+                        <i class="fa-solid fa-user-hoodie"></i>
+                        <i class="fa-kit fa-user-cowboy-hair-long"></i>
+                        <i class="fa-solid fa-user-secret"></i>
+                        <i class="fa-solid fa-user-sith"></i>
+                        <i class="fa-solid fa-user-bounty-hunter"></i>
+                    </h3>
+                    <p>
+                        We are a First Lego League team from 4th to 7th grade in Northwestern Arkansas, USA. We spent so much time testing our Mobile Internet Station and writing this guide that it was like having a part time job.
                     </p>
-                    <br>
-                </li>
-                <li>
-                    <h3 class="wa-heading-xl">Brands to Buy</h3>
-                    <p class="wa-body-m" style="--fa-display: inline;">
-                        We recommend buying a power station / solar panel combo (also referred to sometimes as a solar generator) from 
-                        <a target="_blank" href="https://www.anker.com">Anker&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 
-                        <a target="_blank" href="https://www.bluettipower.com">Bluetti&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, 
-                        <a target="_blank" href="https://ecoflow.com">Ecoflow&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>, and 
-                        <a target="_blank" href="https://www.jackery.com">Jackery&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>. 
-                        Generally, one of these brands is usually available no matter where you live in the world.
+                    <p>                
+                        We made this guide for the 2025-2026 FLL Unearthed theme. Our innovation project is designed to help archeologists <i class="fa-solid fa-person-digging"></i> get internet while on a remote dig.
                     </p>
-                    <p class="wa-body-m">
-                        It's especially important to buy a known brand for the power station, as <strong>cheaper brands are known to explode more often</strong>.
+
+                    <br><br>    
+                    <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-mailbox-flag-up"></i> Help us!</h3>
+                    <p>
+                        <strong>If you found this guide useful, please share it with others!</strong>
                     </p>
-                </li>
-            </ol>
-
-            <br><br>
-            <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-plug-circle-exclamation"></i> Different Solar Connectors</h2>
-            <p>
-                If you're buying your solar panels and power station from different brands, make sure the solar panel output connect matches the power station. If they don't match, you'll need to find an adapter.
-            </p>
-
-            <br><br><br>
-            <h2 class="wa-heading-3xl" style="text-transform: uppercase">
-                About Us
-            </h2>
-            <h2>
-                <i class="fa-solid fa-user-shakespeare"></i>
-                <i class="fa-solid fa-user-hoodie"></i>
-                <i class="fa-kit fa-user-cowboy-hair-long"></i>
-                <i class="fa-solid fa-user-secret"></i>
-                <i class="fa-solid fa-user-sith"></i>
-                <i class="fa-solid fa-user-bounty-hunter"></i>
-            </h3>
-            <p>
-                We are a First Lego League team from 4th to 7th grade in Northwestern Arkansas, USA. We spent so much time testing our Mobile Internet Station and writing this guide that it was like having a part time job.
-            </p>
-            <p>                
-                We made this guide for the 2025-2026 FLL Unearthed theme. Our innovation project is designed to help archeologists <i class="fa-solid fa-person-digging"></i> get internet while on a remote dig.
-            </p>
-
-            <br><br>    
-            <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-solid fa-mailbox-flag-up"></i> Help us!</h3>
-            <p>
-                <strong>If you found this guide useful, please share it with others!</strong>
-            </p>
-            <p>                
-                And please tell us your story of using this guide. Was it helpful? Do you have ideas for improvements? We would love to iterate and make things better! 
-            </p>
-            <p>
-                <strong>Please send your story to <a href="mailto:fll@awesome.me">fll@awesome.me</a>.</strong> Thank you so much for helping us out!!!
-            </p>
+                    <p>                
+                        And please tell us your story of using this guide. Was it helpful? Do you have ideas for improvements? We would love to iterate and make things better! 
+                    </p>
+                    <p>
+                        <strong>Please send your story to <a href="mailto:fll@awesome.me">fll@awesome.me</a>.</strong> Thank you so much for helping us out!!!
+                    </p>
 
 
-            <br><br>
-            <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-brands fa-github"></i> Open Source</h2>
-            <p>
-                The code for this open source guide is <a href="https://github.com/PCCA-Iron-Patriots/mobileinternetstation.com">hosted on GitHub</a>. Please contribute changes so we can make things better!
-            </p>
+                    <br><br>
+                    <h3 class="wa-heading-xl" style="text-transform: uppercase"><i class="fa-brands fa-github"></i> Open Source</h2>
+                    <p>
+                        The code for this open source guide is <a href="https://github.com/PCCA-Iron-Patriots/mobileinternetstation.com">hosted on GitHub</a>. Please contribute changes so we can make things better!
+                    </p>
+
+                </div>
+            </section>
 
         </main>
     </wa-page>
