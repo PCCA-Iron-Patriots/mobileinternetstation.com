@@ -8,6 +8,9 @@
             --wa-font-size-scale: 1.25;
             --wa-color-text-link: var(--wa-color-brand-60);
         }
+        @media (width <= 64rem ) {
+            :root { --wa-font-size-scale: 1; }
+        }
         a { font-weight: bold; }
         wa-page { background-color: var(--wa-color-surface-lowered); }
         .hero {
@@ -42,7 +45,7 @@
             padding-right: 32px;
         }
         body {
-            --max-width: 60rem;
+            --max-width: 64rem;
             background-color: var(--wa-color-surface-lowered);
         }
         .team-icons { font-size: clamp(2.25rem, 5vw, 6rem); }
